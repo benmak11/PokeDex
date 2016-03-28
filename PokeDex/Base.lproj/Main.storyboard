@@ -35,15 +35,15 @@
                                             <constraint firstAttribute="width" constant="130" id="FDR-5b-wx1"/>
                                             <constraint firstAttribute="height" constant="30" id="duo-t9-N1U"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="26"/>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyb-Y0-ghY">
-                                        <rect key="frame" x="560" y="12" width="32" height="32"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyb-Y0-ghY">
+                                        <rect key="frame" x="562" y="17" width="30" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="B9G-fD-FYA"/>
-                                            <constraint firstAttribute="width" constant="32" id="Nxe-7R-Dis"/>
+                                            <constraint firstAttribute="width" constant="30" id="sy3-au-LwC"/>
+                                            <constraint firstAttribute="height" constant="30" id="ycI-xh-aiT"/>
                                         </constraints>
                                         <state key="normal" image="music"/>
                                         <connections>
@@ -53,9 +53,9 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Cyb-Y0-ghY" secondAttribute="trailing" constant="8" id="Ee0-8B-6nV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cyb-Y0-ghY" secondAttribute="trailing" constant="8" id="7UM-yr-wNf"/>
                                     <constraint firstItem="XVF-Fd-LDG" firstAttribute="centerX" secondItem="SI7-42-CUa" secondAttribute="centerX" id="LIa-cK-5ne"/>
-                                    <constraint firstItem="Cyb-Y0-ghY" firstAttribute="top" secondItem="SI7-42-CUa" secondAttribute="top" constant="12" id="RIm-2R-rzm"/>
+                                    <constraint firstItem="Cyb-Y0-ghY" firstAttribute="top" secondItem="SI7-42-CUa" secondAttribute="top" constant="17" id="Ndp-Vx-6Nw"/>
                                     <constraint firstItem="XVF-Fd-LDG" firstAttribute="centerY" secondItem="SI7-42-CUa" secondAttribute="centerY" id="fHw-qP-8sZ"/>
                                     <constraint firstAttribute="height" constant="55" id="sVW-LW-SHc"/>
                                 </constraints>
@@ -110,7 +110,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="uMo-qn-DWq">
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" placeholder="Search for Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="uMo-qn-DWq">
                                 <rect key="frame" x="0.0" y="55" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -141,11 +141,12 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="EaU-4L-X6W" id="aj5-kN-nk7"/>
+                        <outlet property="searchBar" destination="uMo-qn-DWq" id="cow-sR-yYH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="325" y="352"/>
+            <point key="canvasLocation" x="325" y="358"/>
         </scene>
     </scenes>
     <resources>
