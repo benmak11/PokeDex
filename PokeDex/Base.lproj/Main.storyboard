@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="pokemon.ttf">
+            <string>PokemonSolidNormal</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -23,8 +28,35 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SI7-42-CUa">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PokeDex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVF-Fd-LDG">
+                                        <rect key="frame" x="235" y="13" width="130" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="FDR-5b-wx1"/>
+                                            <constraint firstAttribute="height" constant="30" id="duo-t9-N1U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyb-Y0-ghY">
+                                        <rect key="frame" x="560" y="12" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="B9G-fD-FYA"/>
+                                            <constraint firstAttribute="width" constant="32" id="Nxe-7R-Dis"/>
+                                        </constraints>
+                                        <state key="normal" image="music"/>
+                                        <connections>
+                                            <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XSi-We-XDO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Cyb-Y0-ghY" secondAttribute="trailing" constant="8" id="Ee0-8B-6nV"/>
+                                    <constraint firstItem="XVF-Fd-LDG" firstAttribute="centerX" secondItem="SI7-42-CUa" secondAttribute="centerX" id="LIa-cK-5ne"/>
+                                    <constraint firstItem="Cyb-Y0-ghY" firstAttribute="top" secondItem="SI7-42-CUa" secondAttribute="top" constant="12" id="RIm-2R-rzm"/>
+                                    <constraint firstItem="XVF-Fd-LDG" firstAttribute="centerY" secondItem="SI7-42-CUa" secondAttribute="centerY" id="fHw-qP-8sZ"/>
                                     <constraint firstAttribute="height" constant="55" id="sVW-LW-SHc"/>
                                 </constraints>
                             </view>
@@ -119,5 +151,6 @@
     <resources>
         <image name="100" width="120" height="120"/>
         <image name="bg" width="1920" height="1200"/>
+        <image name="music" width="1000" height="1000"/>
     </resources>
 </document>
