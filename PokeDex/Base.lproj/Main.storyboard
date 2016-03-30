@@ -171,6 +171,9 @@
                                             <constraint firstAttribute="width" constant="35" id="TS7-P8-tAq"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="mRL-14-C82" eventType="touchUpInside" id="OOZ-Cl-TvM"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charizard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYg-ih-sg2">
                                         <rect key="frame" x="195" y="13" width="211" height="30"/>
@@ -415,7 +418,16 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="currentEvoImg" destination="ogv-uu-EXD" id="xXs-UH-k4b"/>
+                        <outlet property="defenseLbl" destination="T1a-fN-MI4" id="bpg-lt-7Q7"/>
+                        <outlet property="descriptionLbl" destination="6BU-zu-bY6" id="kUs-o1-cjR"/>
+                        <outlet property="evoLbl" destination="YPq-6T-qFe" id="CA4-Ha-chB"/>
+                        <outlet property="heightLbl" destination="lRv-qi-YAK" id="yvQ-U6-a2y"/>
+                        <outlet property="mainImg" destination="zBW-sd-5HD" id="ZQA-pD-G87"/>
                         <outlet property="nameLbl" destination="KYg-ih-sg2" id="Gma-at-8WZ"/>
+                        <outlet property="nextEvoImg" destination="V9V-5i-IUq" id="OK0-Zp-421"/>
+                        <outlet property="pokedexLbl" destination="VjL-X9-7kD" id="hn2-K8-kJ5"/>
+                        <outlet property="typeLbl" destination="IEw-wE-gDo" id="UoT-XA-GZE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYw-pO-CW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
