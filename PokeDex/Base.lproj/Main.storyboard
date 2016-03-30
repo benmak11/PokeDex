@@ -51,7 +51,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.52941176469999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Cyb-Y0-ghY" secondAttribute="trailing" constant="8" id="7UM-yr-wNf"/>
                                     <constraint firstItem="XVF-Fd-LDG" firstAttribute="centerX" secondItem="SI7-42-CUa" secondAttribute="centerX" id="LIa-cK-5ne"/>
@@ -185,7 +185,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.52941176469999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="KYg-ih-sg2" firstAttribute="centerX" secondItem="Voc-mY-Kpj" secondAttribute="centerX" id="6AM-Zg-yJ7"/>
                                     <constraint firstAttribute="bottom" secondItem="hLg-fm-q9M" secondAttribute="bottom" constant="15" id="9bK-2n-lto"/>
@@ -347,7 +347,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.52941176469999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="Bk3-Ih-kEb"/>
                                     <constraint firstItem="YPq-6T-qFe" firstAttribute="centerY" secondItem="i76-9t-rwT" secondAttribute="centerY" id="nzO-Va-2l4"/>
@@ -418,6 +418,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="baseAttack" destination="MrA-OZ-pE2" id="xzy-bE-U8u"/>
                         <outlet property="currentEvoImg" destination="ogv-uu-EXD" id="xXs-UH-k4b"/>
                         <outlet property="defenseLbl" destination="T1a-fN-MI4" id="bpg-lt-7Q7"/>
                         <outlet property="descriptionLbl" destination="6BU-zu-bY6" id="kUs-o1-cjR"/>
@@ -428,6 +429,7 @@
                         <outlet property="nextEvoImg" destination="V9V-5i-IUq" id="OK0-Zp-421"/>
                         <outlet property="pokedexLbl" destination="VjL-X9-7kD" id="hn2-K8-kJ5"/>
                         <outlet property="typeLbl" destination="IEw-wE-gDo" id="UoT-XA-GZE"/>
+                        <outlet property="weightLbl" destination="lPs-a7-9nm" id="6wT-RD-KR8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYw-pO-CW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
